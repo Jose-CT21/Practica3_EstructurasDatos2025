@@ -1,0 +1,12 @@
+El algoritmo de Dijkstra sirve para encontrar el camino más corto entre un punto y todos los demás dentro de un mapa o una red (como calles, conexiones o rutas).
+Durante este proceso, Dijkstra siempre necesita saber cuál es el próximo nodo con la distancia más corta hasta ahora. Ese nodo es el siguiente que debe procesarse.
+Aquí es donde entra el montículo mínimo (min-heap).
+
+Un min-heap es una estructura donde siempre puedes obtener el valor más pequeño rápidamente.
+Entonces, cada vez que Dijkstra calcula una distancia, la inserta en un min-heap.
+De esta forma:
+
+El min-heap mantiene todas las distancias ordenadas automáticamente.
+Dijkstra siempre puede sacar el nodo con la distancia más pequeña en tiempo muy rápido.
+Esto hace que el algoritmo sea mucho más eficiente.
+En resumen, el montículo funciona como una “cola de prioridad”, permitiendo que Dijkstra elija siempre el siguiente punto más cercano sin tener que revisar todos los demás.
